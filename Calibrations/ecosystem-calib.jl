@@ -109,7 +109,7 @@ Threads.@threads for iter in 1:nth
         # run the opt
         iSRange = [(p0_guess, p0_guess*10),(0.0,1.0),(0.2,1.5)];
         iopts = bbsetup(ibb_fn; Method = :adaptive_de_rand_1_bin_radiuslimited, SearchRange = iSRange, 
-                NumDimensions = 3, MaxTime = 10.0, PopulationSize = 50, TraceMode=:silent); # 1 day: 86400.0
+                NumDimensions = 3, MaxTime = 86400.0, PopulationSize = 50, TraceMode=:silent); # 1 day: 86400.0
         ires = bboptimize(iopts);
         iopt_par = best_candidate(ires);
         ifitness = best_fitness(ires);
