@@ -4,7 +4,7 @@
 #SBATCH --output=eco-2-debug.txt
 #
 #SBATCH --ntasks=1
-#SBATCH --time=30:00:00
+#SBATCH --time=eco-2-debug.sh
 #SBATCH --mem-per-cpu=1G
 #SBATCH --partition=debug
 #SBATCH --mail-user jamesholehouse1@gmail.com
