@@ -1,0 +1,33 @@
+Node list: hopper011
+Number of tasks : 1
+Data imported.
+Parallel prog set-up.
+Storage vectors initialized.
+Running thread 8.
+Running thread 5.
+Running thread 6.
+Running thread 2.
+Running thread 4.
+Running thread 1.
+Running thread 3.
+Running thread 7.
+Starting optimizations.
+Starting optimizations.
+Starting optimizations.
+Starting optimizations.
+Starting optimizations.
+Starting optimizations.
+Starting optimizations.
+Starting optimizations.
+Calibration 9 out of 10 now done, giving parameters p0 = 17.599 θ = 0.017, γ = 1.094 with fitness 41.702.
+Calibration 7 out of 10 now done, giving parameters p0 = 18.862 θ = 0.364, γ = 1.044 with fitness 98.377.
+Calibration 5 out of 10 now done, giving parameters p0 = 19.533 θ = 0.061, γ = 0.690 with fitness 72.428.
+Calibration 1 out of 10 now done, giving parameters p0 = 14.581 θ = 0.102, γ = 1.002 with fitness 40.022.
+Starting optimizations.
+Calibration 6 out of 10 now done, giving parameters p0 = 14.343 θ = 0.238, γ = 1.010 with fitness 72.264.
+Calibration 3 out of 10 now done, giving parameters p0 = 17.865 θ = 0.545, γ = 1.278 with fitness 114.727.
+Starting optimizations.
+Calibration 8 out of 10 now done, giving parameters p0 = 5.204 θ = 0.128, γ = 0.995 with fitness 106.448.
+Calibration 10 out of 10 now done, giving parameters p0 = 8.625 θ = 0.111, γ = 1.189 with fitness 60.565.
+Calibration 2 out of 10 now done, giving parameters p0 = 7.423 θ = 0.091, γ = 1.056 with fitness 110.605.
+Calibration 4 out of 10 now done, giving parameters p0 = 20.267 θ = 0.417, γ = 0.281 with fitness 115.480.
