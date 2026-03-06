@@ -1,3 +1,0 @@
-Node list: easley004
-Number of tasks : 1
-slurmstepd: error: *** JOB 278427 ON easley004 CANCELLED AT 2026-03-05T21:57:16 ***

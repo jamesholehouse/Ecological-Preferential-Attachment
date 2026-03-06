@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#SBATCH --job-name=eco-7
-#SBATCH --output=eco-7.txt
+#SBATCH --job-name=eco-9
+#SBATCH --output=eco-9.txt
 #
 #SBATCH --ntasks=1
 #SBATCH --time=30:00:00
@@ -14,4 +14,4 @@
 echo Node list: $SLURM_JOB_NODELIST
 echo Number of tasks : $SLURM_NTASKS
 
-julia -t 10 ecosystem-calib.jl 7
+julia -t 10 ecosystem-calib.jl 9

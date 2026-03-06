@@ -10,7 +10,8 @@ module dsim
     3. p0, the proportionality constant for new function creation.
     """
     function pN(θ,SV,p0)
-        return p0*(sum(SV.^θ))^(-1)
+        d = sum(SV.^θ);
+        return p0*d^(-1)
     end
 
 
@@ -39,7 +40,8 @@ module dsim
                 R += 1
             else
                 # add worker to existing function, first sample that function
-                chosen_fn = sample(collect(1:1:R),Weights(SV.^γ))
+                w = SV .^ γ
+                chosen_fn = sample(eachindex(SV), Weights(w))
                 SV[chosen_fn] += 1
             end
         end
@@ -94,23 +96,17 @@ module dsim
                 R += 1
             else
                 # add worker to existing function, first sample that function
-                chosen_fn = sample(collect(1:1:R),Weights(SV.^γ))
+                w = SV .^ γ
+                chosen_fn = sample(eachindex(SV), Weights(w))
                 SV[chosen_fn] += 1
             end
         end
         sort!(SV,rev=true)
         
         if output == :pdf
-#             rf = SV./sum(SV)
-#             SV = Nothing # save RAM here and re-assign
-#             SV0 = Nothing
-#             GC.gc() # garbage collection
-            return SV#, rf
+            return SV
         elseif output == :cdf
             rf = SV./sum(SV)
-            SV = Nothing # save RAM here and re-assign
-            SV0 = Nothing
-            GC.gc() # garbage collection
             return [sum(rf[1:j]) for j in 1:length(rf)]
         else
             error("choice of output should be either :cdf or :pdf.")
@@ -155,12 +151,13 @@ module dsim
             rand_p = sample([0,1],Weights([1-p,p]))
             if rand_p == 1
                 # add function with 1 base unit
-                append!(SV,1)
+                push!(SV,1)
                 # update number of functions
                 R += 1
             else
                 # add worker to existing function, first sample that function
-                chosen_fn = sample(collect(1:1:R),Weights(SV.^γ))
+                w = SV .^ γ
+                chosen_fn = sample(eachindex(SV), Weights(w))
                 SV[chosen_fn] += 1
             end
         end
@@ -174,9 +171,6 @@ module dsim
             return SV#, rf
         elseif output == :cdf
             rf = SV./sum(SV)
-            SV = Nothing # save RAM here and re-assign
-            SV0 = Nothing
-            GC.gc() # garbage collection
             return [sum(rf[1:j]) for j in 1:length(rf)]
         else
             error("choice of output should be either :cdf or :pdf.")
