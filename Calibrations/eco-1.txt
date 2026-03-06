@@ -1,2 +1,35 @@
 Node list: easley037
 Number of tasks : 1
+Data imported.
+Parallel prog set-up.
+Storage vectors initialized.
+Running thread 7.
+Running thread 3.
+Running thread 8.Running thread 9.Running thread 1.
+Running thread 2.
+
+Running thread 4.
+Running thread 10.
+Running thread 6.
+Running thread 5.
+
+Starting optimizations.
+Starting optimizations.
+Starting optimizations.Starting optimizations.Starting optimizations.
+Starting optimizations.
+Starting optimizations.
+Starting optimizations.
+Starting optimizations.
+Starting optimizations.
+
+
+Calibration 6 out of 10 now done, giving parameters p0 = 43.422 θ = 0.914, γ = 0.977 with fitness 6.005.
+Calibration 8 out of 10 now done, giving parameters p0 = 31.981 θ = 0.911, γ = 0.981 with fitness 6.462.
+Calibration 4 out of 10 now done, giving parameters p0 = 24.763 θ = 0.964, γ = 1.204 with fitness 4.458.
+Calibration 7 out of 10 now done, giving parameters p0 = 43.166 θ = 0.941, γ = 0.993 with fitness 4.634.
+Calibration 9 out of 10 now done, giving parameters p0 = 43.058 θ = 0.976, γ = 1.055 with fitness 5.787.
+Calibration 10 out of 10 now done, giving parameters p0 = 40.381 θ = 0.935, γ = 1.063 with fitness 4.113.
+Calibration 3 out of 10 now done, giving parameters p0 = 34.458 θ = 0.892, γ = 0.957 with fitness 5.088.
+Calibration 5 out of 10 now done, giving parameters p0 = 42.055 θ = 0.920, γ = 0.998 with fitness 5.179.
+Calibration 1 out of 10 now done, giving parameters p0 = 38.732 θ = 0.944, γ = 1.071 with fitness 7.326.
+Calibration 2 out of 10 now done, giving parameters p0 = 33.960 θ = 0.875, γ = 0.973 with fitness 3.217.
