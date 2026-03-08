@@ -19,7 +19,7 @@ sizes = sum.([data[x][!,:count] for x in 1:length(data)]);
 top10inds = sortperm(sizes, rev = true)[1:10];
 
 # need to get the initial conditions (smallest ecosystem in the data for that class)
-small_to_large = sortperm(sizes);
+small_to_large = sortperm(sizes)
 ic_sys = data[small_to_large[2]]
 ic_sys = sort(ic_sys[!,:count], rev=true)
 
@@ -107,9 +107,9 @@ Threads.@threads for iter in 1:nth
         println("Starting optimizations.")
 
         # run the opt
-        iSRange = [(-0.6,1.0),(0.2,1.5)];
+        iSRange = [(-1.0,1.0),(0.2,1.5)];
         iopts = bbsetup(ibb_fn; Method = :adaptive_de_rand_1_bin_radiuslimited, SearchRange = iSRange, 
-                NumDimensions = 2, MaxTime = 86400.0, PopulationSize = 50, TraceMode=:silent); # 1 day: 86400.0
+                NumDimensions = 2, MaxTime = 86400.0, PopulationSize = 20, TraceMode=:silent); # 1 day: 86400.0
         ires = bboptimize(iopts);
         iopt_par = best_candidate(ires);
         ifitness = best_fitness(ires);
