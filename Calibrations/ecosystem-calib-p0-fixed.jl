@@ -122,7 +122,7 @@ Threads.@threads for iter in 1:nth
 end
 
 df_out = DataFrame(theta=θ_vec_all, gamma=γ_vec_all, fitness = fitness_all);
-CSV.write("$(homedir())/GitHub/Ecological-Preferential-Attachment/Calibrations/calibration_results_p0_fixed/eco-calib-$(data_ind).csv", df_out)
+CSV.write("$(homedir())/GitHub/Ecological-Preferential-Attachment/Calibrations/calibration_results_p0_fixed2/eco-calib-$(data_ind).csv", df_out)
 pwd()
 
 
