@@ -19,7 +19,8 @@ sizes = sum.([data[x][!,:count] for x in 1:length(data)]);
 top10inds = sortperm(sizes, rev = true)[1:10];
 
 # need to get the initial conditions (smallest ecosystem in the data for that class)
-ic_sys = data[argmin(sizes)]
+small_to_large = sortperm(sizes);
+ic_sys = data[small_to_large[2]]
 ic_sys = sort(ic_sys[!,:count], rev=true)
 
 # need to find the bounding value of p0
