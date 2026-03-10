@@ -107,7 +107,7 @@ Threads.@threads for iter in 1:nth
         println("Starting optimizations.")
 
         # run the opt
-        iSRange = [(-1.0,1.0),(0.2,1.5)];
+        iSRange = [(-5.0,1.0),(0.2,1.5)];
         iopts = bbsetup(ibb_fn; Method = :adaptive_de_rand_1_bin_radiuslimited, SearchRange = iSRange, 
                 NumDimensions = 2, MaxTime = 86400.0, PopulationSize = 20, TraceMode=:silent); # 1 day: 86400.0
         ires = bboptimize(iopts);
