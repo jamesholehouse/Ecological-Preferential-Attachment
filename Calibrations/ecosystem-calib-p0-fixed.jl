@@ -65,8 +65,8 @@ fitness_all = Vector{Union{Missing, Float64}}(undef, 10); fitness_all .= 0.0;
 function pad_rdist(d1, d2)
     min_not_0 = minimum(filter!(x->x!=0,vcat(d1, d2))); # so that the padded values are not exactly zero
     n = max(length(d1), length(d2));
-    d1_padded = vcat(d1, ones(n - length(d1))*min_not_0/10); # divide by 10, so as not to punish the distance too badly (could make things too stochastic).
-    d2_padded = vcat(d2, ones(n - length(d2))*min_not_0/10);
+    d1_padded = vcat(d1, ones(n - length(d1))*min_not_0/2); # divide by 2, so as not to punish the distance too badly (could make things too stochastic).
+    d2_padded = vcat(d2, ones(n - length(d2))*min_not_0/2);
     return d1_padded, d2_padded, abs(length(d1) - length(d2));
 end;
 
