@@ -65,8 +65,8 @@ fitness_all = Vector{Union{Missing, Float64}}(undef, 10); fitness_all .= 0.0;
 function pad_rdist(d1, d2)
     min_not_0 = minimum(filter!(x->x!=0,vcat(d1, d2))); # so that the padded values are not exactly zero
     n = max(length(d1), length(d2));
-    d1_padded = vcat(d1, ones(n - length(d1))*min_not_0/2); # divide by 2, so as not to punish the distance too badly (could make things too stochastic).
-    d2_padded = vcat(d2, ones(n - length(d2))*min_not_0/2);
+    d1_padded = vcat(d1, ones(n - length(d1))*min_not_0/10); # divide by 10, so as not to punish the distance too badly (could make things too stochastic).
+    d2_padded = vcat(d2, ones(n - length(d2))*min_not_0/10);
     return d1_padded, d2_padded, abs(length(d1) - length(d2));
 end;
 
@@ -107,9 +107,9 @@ Threads.@threads for iter in 1:nth
         println("Starting optimizations.")
 
         # run the opt
-        iSRange = [(-10.0,1.0),(0.2,1.5)];
+        iSRange = [(-10.0,1.5),(0.2,1.5)];
         iopts = bbsetup(ibb_fn; Method = :adaptive_de_rand_1_bin_radiuslimited, SearchRange = iSRange, 
-                NumDimensions = 2, MaxTime = 86400.0, PopulationSize = 50, TraceMode=:silent); # 1 day: 86400.0
+                NumDimensions = 2, MaxTime = 158400.0, PopulationSize = 50, TraceMode=:silent); # 1 day: 86400.0; 1 day and 20 hours: 158400.0
         ires = bboptimize(iopts);
         iopt_par = best_candidate(ires);
         ifitness = best_fitness(ires);

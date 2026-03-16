@@ -4,7 +4,7 @@
 #SBATCH --output=eco-5.txt
 #
 #SBATCH --ntasks=1
-#SBATCH --time=30:00:00
+#SBATCH --time=47:00:00
 #SBATCH --mem-per-cpu=5G
 #SBATCH --partition=general
 #SBATCH --mail-user jamesholehouse1@gmail.com
