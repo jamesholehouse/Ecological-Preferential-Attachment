@@ -1,35 +1,35 @@
-Node list: easley024
+Node list: easley003
 Number of tasks : 1
 Data imported.
 Parallel prog set-up.
 Storage vectors initialized.
-Running thread 2.
-Running thread 3.
-Running thread 10.
-Running thread 8.
-Running thread 4.
-Running thread 9.
-Running thread 6.
-Running thread 7.
 Running thread 5.
+Running thread 4.
 Running thread 1.
+Running thread 3.Running thread 8.
+Running thread 9.
+
+Running thread 2.
+Running thread 7.
+Running thread 6.
+Running thread 10.
+Starting optimizations.
+Starting optimizations.
+Starting optimizations.
 Starting optimizations.
 Starting optimizations.Starting optimizations.
-Starting optimizations.
-Starting optimizations.
-Starting optimizations.
-Starting optimizations.
 
 Starting optimizations.
 Starting optimizations.
 Starting optimizations.
-Calibration 3 out of 10 now done, giving parameters θ = -0.269, γ = 1.023 with fitness 6.174.
-Calibration 5 out of 10 now done, giving parameters θ = -0.129, γ = 1.024 with fitness 7.243.
-Calibration 8 out of 10 now done, giving parameters θ = -0.273, γ = 1.009 with fitness 4.503.
-Calibration 9 out of 10 now done, giving parameters θ = 0.059, γ = 0.990 with fitness 5.783.
-Calibration 7 out of 10 now done, giving parameters θ = -0.441, γ = 0.990 with fitness 5.481.
-Calibration 10 out of 10 now done, giving parameters θ = 0.304, γ = 1.048 with fitness 4.213.
-Calibration 4 out of 10 now done, giving parameters θ = -0.661, γ = 1.016 with fitness 6.656.
-Calibration 1 out of 10 now done, giving parameters θ = 0.084, γ = 0.999 with fitness 6.380.
-Calibration 6 out of 10 now done, giving parameters θ = -0.123, γ = 0.984 with fitness 6.586.
-Calibration 2 out of 10 now done, giving parameters θ = -0.446, γ = 1.015 with fitness 5.470.
+Starting optimizations.
+Calibration 5 out of 10 now done, giving parameters θ = -0.117, γ = 1.017 with fitness 7.683.
+Calibration 4 out of 10 now done, giving parameters θ = -0.538, γ = 1.009 with fitness 7.388.
+Calibration 9 out of 10 now done, giving parameters θ = 0.058, γ = 0.985 with fitness 5.702.
+Calibration 2 out of 10 now done, giving parameters θ = -0.368, γ = 1.002 with fitness 6.989.
+Calibration 6 out of 10 now done, giving parameters θ = -0.098, γ = 0.980 with fitness 7.364.
+Calibration 8 out of 10 now done, giving parameters θ = -0.318, γ = 1.009 with fitness 5.150.
+Calibration 10 out of 10 now done, giving parameters θ = 0.275, γ = 1.046 with fitness 5.288.
+Calibration 7 out of 10 now done, giving parameters θ = -0.448, γ = 0.981 with fitness 5.453.
+Calibration 3 out of 10 now done, giving parameters θ = -0.241, γ = 1.026 with fitness 6.777.
+Calibration 1 out of 10 now done, giving parameters θ = 0.092, γ = 1.006 with fitness 6.924.
