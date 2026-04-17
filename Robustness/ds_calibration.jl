@@ -60,7 +60,7 @@ Threads.@threads for j in 1:20
     # run the opt
     iSRange = [(-10.0,1.5),(0.2,1.5)];
     iopts = bbsetup(ibb_fn; Method = :adaptive_de_rand_1_bin_radiuslimited, SearchRange = iSRange, 
-            NumDimensions = 2, MaxTime = 1.0, PopulationSize = 50, TraceMode=:silent); # 1 day: 86400.0; 1 day and 20 hours: 158400.0
+            NumDimensions = 2, MaxTime = 82800.0, PopulationSize = 50, TraceMode=:silent); # 1 day: 86400.0; 1 day and 20 hours: 158400.0
     ires = bboptimize(iopts);
     iopt_par = best_candidate(ires);
     ifitness = best_fitness(ires);
@@ -72,4 +72,4 @@ Threads.@threads for j in 1:20
 end
 
 df_out = DataFrame(theta=θ_vec_all, gamma=γ_vec_all, fitness = fitness_all);
-CSV.write("./inferred_ds_parameters", df_out)
+CSV.write("./inferred_ds_parameters.csv", df_out)

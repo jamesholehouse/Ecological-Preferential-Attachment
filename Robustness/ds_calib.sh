@@ -4,7 +4,7 @@
 #SBATCH --output=ds_calib.txt
 #
 #SBATCH --ntasks=1
-#SBATCH --time=1:00:00
+#SBATCH --time=24:00:00
 #SBATCH --mem-per-cpu=2G
 #SBATCH --partition=general
 #SBATCH --mail-user jamesholehouse1@gmail.com
