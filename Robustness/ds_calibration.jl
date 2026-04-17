@@ -4,7 +4,7 @@ include("$(homedir())/GitHub/Ecological-Preferential-Attachment/diversity-simula
 using .dsim
 
 # import data for the initial condition
-read_data = CSV.read("/home/jamesh/GitHub/Ecological-Preferential-Attachment/Data_csv/Grilli-crosssecdata__datatax.csv", DataFrame)
+read_data = CSV.read("$(homedir())/GitHub/Ecological-Preferential-Attachment/Data_csv/Grilli-crosssecdata__datatax.csv", DataFrame)
 read_data = filter(:nreads => !=(0), read_data)
 # first split on classification
 gd1 = groupby(read_data, :classification);
